@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-hero{
+	background-color: transparent;
+	background: url(../images/landingpage2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	/*opacity: 0.8;*/
+}
+
+.spacecon{
+	height: 300px;
+}
+
+.radbtn{
+	border-radius: 30px;
+}
+
+.htwelcome{
+	height: 300px;
+	width: 100%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #669be6;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #58686f;
+}
+
+.site-hero2{
+	background-color: transparent;
+	background: url(../images/resto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*height: 100vh;*/
+}
+
+ul#restolist{
+	text-align: center;
+	list-style: none;
+}
+
+ul#restolist li{
+	display: inline-block;
+}
+
+.letspace{
+	letter-spacing: 2px;
+	color: #ff9665;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+a:hover{
+	color: #58686f;
+}
+
