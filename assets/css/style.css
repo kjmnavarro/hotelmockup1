@@ -18,11 +18,12 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	height: 100vh;
 	/*opacity: 0.8;*/
 }
 
-.spacecon{
+#spacecon{
 	height: 300px;
 }
 
@@ -61,6 +62,7 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	/*height: 100vh;*/
 }
 
@@ -84,3 +86,46 @@ a:hover{
 	color: #58686f;
 }
 
+#bgfoot{
+	background-color: #800000;
+}
+
+.site-hero3{
+	background-color: transparent;
+	background: url(../images/landingpage2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 200px;
+	/*opacity: 0.8;*/
+}
+
+#rsrvebtn{
+	border: 2px solid #ffffff;
+	border-radius: 12px;
+}
+
+#abouttext{
+	font-size: 3em;
+}
+
+.picsize{
+	height: 8rem;
+	width: 8rem;
+	position: relative;
+	left: 30%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #800000;
+}
+
+#welcometext{
+	color: #ffffff;
+	font-weight: bold;
+}

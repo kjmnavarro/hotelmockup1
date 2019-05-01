@@ -20,18 +20,20 @@
 	<!-- fontawesome -->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+  	<link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
+
 </head>
 <body>
 
 <section class="site-hero">
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-		  <a class="navbar-brand mt-5" href="#">University Hotel</a>
+		  <a class="navbar-brand mt-5" href="#"><img style="height: 5rem; width: 5rem;" src="assets/images/logo.png"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
-		    <ul class="navbar-nav ml-auto mt-5">
+		    <ul class="navbar-nav ml-auto mt-5 font-weight-bold">
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 		      </li>
@@ -45,13 +47,10 @@
 		        <a class="nav-link" href="#resto">Restaurant Menu</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">About Us</a>
+		        <a class="nav-link" href="#aboutus">About Us</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Events</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Reservation</a>
+		        <a class="nav-link" href="#reservee">Reservation</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -61,54 +60,55 @@
 
 	<div class="container">
 		<div class="row mt-5">
-			<div class="col-lg-2 spacecon"></div>
-			<div class="col-lg-10 text-white">
-				<h1>WELCOME TO UNIVERSITY HOTEL!</h1>
+			<div class="col-lg-12 text-center" id="spacecon">
+				<h1 id="welcometext" class="mt-5">WELCOME TO UNIVERSITY HOTEL!</h1>
 			</div>
 		</div>
-		<section class="bg-transparent pb-0 mt-5">
-		<div class="container text-white">
-			<form>
-			<div class="row formsec">
-				<div class="col-lg-3">
-					<label for="checkin_date" class="font-weight-bold text-black">Check In</label>
-					<input type="text" id="checkin_date" class="form-control">
-				</div>
-				<div class="col-lg-3">
-					<label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
-					<input type="text" id="checkout_date" class="form-control">
-				</div>
-				<div class="col-lg-3">
-					<div class="row">
-						<div class="col-lg-6">
-							<label for="adults" class="font-weight-bold text-black">Adults</label>
-							<span class="ion-ios-arrow-down"></span>
-							<select id="adults" class="custom-select">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4+</option>
-							</select>
-						</div>
-						<div class="col-lg-6">
-							<label for="children" class="font-weight-bold text-black">Children</label>
-							<span class="ion-ios-arrow-down"></span>
-							<select id="children" class="custom-select">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4+</option>
-							</select>
+		<div class="d-flex justify-content-center">
+			<section class="bg-transparent mt-5">
+			<div class="container text-white">
+				<form>
+				<div class="row">
+					<div class="col-lg-3">
+						<label for="checkin_date" class="font-weight-bold text-black">Check In</label>
+						<input type="text" id="checkin_date" class="form-control">
+					</div>
+					<div class="col-lg-3">
+						<label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
+						<input type="text" id="checkout_date" class="form-control">
+					</div>
+					<div class="col-lg-3">
+						<div class="row">
+							<div class="col-lg-6">
+								<label for="adults" class="font-weight-bold text-black">Adults</label>
+								<span class="ion-ios-arrow-down"></span>
+								<select id="adults" class="custom-select">
+									<option selected>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4+</option>
+								</select>
+							</div>
+							<div class="col-lg-6">
+								<label for="children" class="font-weight-bold text-black">Children</label>
+								<span class="ion-ios-arrow-down"></span>
+								<select id="children" class="custom-select">
+									<option selected>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4+</option>
+								</select>
+							</div>
 						</div>
 					</div>
+					<div class="col-lg-3 align-self-end">
+						<button type="button" class="btn btn-success">Check Availability</button>
+					</div>
 				</div>
-				<div class="col-lg-3 align-self-end">
-					<button type="button" class="btn btn-success">Check Availability</button>
-				</div>
+				</form>
 			</div>
-			</form>
+			</section> <!--  end of form -->
 		</div>
-		</section> <!--  end of form -->
 	</div>
 </section>
 
@@ -120,7 +120,7 @@
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-			<button type="button" class="btn btn-warning text-white radbtn py-2 mr-3">Learn More</button>
+			<button type="button" class="btn btn-info text-white radbtn py-2 mr-3">Learn More</button>
 		</div>
 		<div class="col-lg-7 htwelcome mb-5" data-aos="fade-up" data-aos-duration="500">
 			<img src="assets/images/bed1.jpg" class="htwelcome">
@@ -225,18 +225,18 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center" data-aos="fade">
+				<div class="col-lg-12 text-center" data-aos="fade" id="bckclick">
 					<ul class="nav-item" id="restolist">
-					  <li id="lnkmain"><a class="nav-link letspace" href="#fdmains" onclick="foodmains()">MAINS</a></li>
-					  <li id="lnkdss"><a class="nav-link letspace" href="#fddesserts" onclick="fooddesserts()">DESSERTS</a></li>
-					  <li id="lnkdrnk"><a class="nav-link letspace" href="#fddrinks" onclick="fooddrinks()">DRINKS</a></li>
+					  <li id="lnkmain"><a class="nav-link letspace" href="#bckclick" onclick="foodmains()">MAINS</a></li>
+					  <li id="lnkdss"><a class="nav-link letspace" href="#bckclick" onclick="fooddesserts()">DESSERTS</a></li>
+					  <li id="lnkdrnk"><a class="nav-link letspace" href="#bckclick" onclick="fooddrinks()">DRINKS</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="tabcontent" id="fdmains" data-aos="flip-right">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 mb-5">
 						<div class="card" style="width: 18rem;">
 						  <img class="card-img-top" src="assets/images/mains1.jpg" alt="Card image cap" style="height: 12rem;">
 						  <div class="card-body">
@@ -277,7 +277,7 @@
 
 			<div class="tabcontent" id="fddesserts">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 mb-5">
 						<div class="card" style="width: 18rem;">
 						  <img class="card-img-top" src="assets/images/des1.jpg" alt="Card image cap" style="height: 12rem;">
 						  <div class="card-body">
@@ -317,7 +317,7 @@
 
 			<div class="tabcontent" id="fddrinks">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 mb-5">
 						<div class="card" style="width: 18rem;">
 						  <img class="card-img-top" src="assets/images/drnk1.jpg" alt="Card image cap" style="height: 12rem;">
 						  <div class="card-body">
@@ -358,9 +358,79 @@
 	</div>
 </section>
 
-<div class="container-fluid mt-5 bg-foot">
+<div class="container mt-5 mb-5" id="aboutus">
+	
+	<div class="row text-center mb-5">
+		<div class="col-lg-12">
+			<h2 id="abouttext">About Us</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="d-flex align-items-center">
+			  <img src="assets/images/person_1.jpg" class="rounded-circle picsize" alt="Person1">
+			</div>
+			<div class="text-center mt-3">
+				<blockquote>
+					<p>“Hotel staff are delightful. All genuinely friendly and happy to help. Rooms are beautifully clean with nice outlook, we had a room that looked over lovely bush lands. Highly recommend. Restaurant food was amazing, lovely dining experience both dinner and breakfast buffet. So convenient and so delicious.”</p>
+				</blockquote>
+				<p>
+					<em>- Jean Smith</em>
+				</p>
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<div class="d-flex align-items-center">
+			  <img src="assets/images/person_2.jpg" class="rounded-circle picsize" alt="Person1">
+			</div>
+			<div class="text-center mt-3">
+				<blockquote>
+					<p>“I’ve been staying here for work for exactly 6 years and I’ve never had a bad experience. Clean rooms, with space to spread out and tranquil views of forest to the rear that make you feel your miles away from anywhere. Great menu & always deliver a perfect steak!”</p>
+				</blockquote>
+				<p>
+					<em>- John Doe</em>
+				</p>
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<div class="d-flex align-items-center">
+			  <img src="assets/images/person_3.jpg" class="rounded-circle picsize" alt="Person1">
+			</div>
+			<div class="text-center mt-3">
+				<blockquote>
+					<p>“We love this place!!! Having an outlook of the bush instantly makes you relax. The staff are always friendly, the rooms are spacious and very clean with great decor. If you want a place to relax, that's close to shopping, restaurants and eateries, this is the place to be. Highly recommended”</p>
+				</blockquote>
+				<p>
+					<em>- Juan Dela Cruz</em>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="site-hero3 d-flex align-items-center" id="reservee">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up" data-aos-delay="200">
+				<h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
+			</div>
+
+			<div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+				<!-- <button class="btn btn-outline-light">Reserve Now</button> -->
+				<a href="#" class="btn btn-outline-light py-3 px-5">Reserve Now</a>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<div class="container-fluid bg-foot">
 			<div class="row">
-				<div class="col-lg-12 text-center pt-4">
+				<div class="col-lg-12 text-center pt-4 text-white" id="bgfoot">
 					<p class="text-center">Copyright &copy; JK Software System Firm 2019</p>
 				</div>
 			</div>
